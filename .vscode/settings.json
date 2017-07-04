@@ -1,0 +1,15 @@
+{
+  "files.associations": {
+    "*.wxml": "xml",
+    "*.wxss": "css",
+    "*.xm": "objective-c",
+    "*.c": "c",
+    "__config": "cpp",
+    "cstddef": "cpp",
+    "exception": "cpp",
+    "initializer_list": "cpp",
+    "new": "cpp",
+    "stdexcept": "cpp",
+    "typeinfo": "cpp"
+  }
+}
