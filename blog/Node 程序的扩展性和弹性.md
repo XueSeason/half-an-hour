@@ -1,6 +1,6 @@
 # 扩展性和弹性
 
-获取 CPU 信息 `require('os').cpus()`，已本人 Macbook 为例：
+获取 CPU 信息 `require('os').cpus()`，本人 Macbook 为例：
 
 ```javascript
 [ { model: 'Intel(R) Core(TM) i5-4278U CPU @ 2.60GHz',
