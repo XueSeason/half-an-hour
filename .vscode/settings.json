@@ -10,6 +10,8 @@
     "initializer_list": "cpp",
     "new": "cpp",
     "stdexcept": "cpp",
-    "typeinfo": "cpp"
+    "typeinfo": "cpp",
+    "algorithm": "cpp",
+    "iosfwd": "cpp"
   }
 }
