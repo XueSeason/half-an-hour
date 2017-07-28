@@ -20,26 +20,44 @@ class FeactCompositeComponentWrapper {
   constructor (el) {
     this._currentElement = el
   }
-  /**
-   * transform virtual DOM to native DOM and mount it to container
-   * @param {object} container native DOM element for mount
-   */
   mountComponent (container) {
-    // the process of render virtual DOM
     const Component = this._currentElement.type
     const componentInstance = new Component(this._currentElement.props)
-    let element = componentInstance.render()
+    this._instance = componentInstance
 
-    // element maybe is function
-    while (typeof element.type === 'function') {
-      const Component = element.type
-      element = (new Component(element.props)).render()
+    if (componentInstance.componentWillMount) {
+      componentInstance.componentWillMount()
     }
 
-    // virtual DOM to native DOM
-    // and mount it to container
-    const domComponentInstance = new FeactDOMComponent(element)
-    return domComponentInstance.mountComponent(container)
+    const markup = this.performInitialMount(container)
+
+    if (componentInstance.componentDidMount) {
+      componentInstance.componentDidMount()
+    }
+
+    return markup
+  }
+  performInitialMount (container) {
+    const renderedElement = this._instance.render()
+
+    const child = instantiateFeactComponent(renderedElement)
+    this._renderedComponent = child
+
+    return FeactReconciler.mountComponent(child, container)
+  }
+}
+
+const FeactReconciler = {
+  mountComponent (internalInstance, container) {
+    return internalInstance.mountComponent(container)
+  }
+}
+
+function instantiateFeactComponent (el) {
+  if (typeof el.type === 'string') {
+    return new FeactDOMComponent(el)
+  } else if (typeof el.type === 'function') {
+    return new FeactCompositeComponentWrapper(el)
   }
 }
 
@@ -52,24 +70,14 @@ TopLevelWrapper.prototype.render = function () {
 }
 
 const Feact = {
-  /**
-   * creae Component Class
-   * @param {object} spec declaration object
-   */
   createClass (spec) {
     function Constructor (props) {
       this.props = props
     }
-    Constructor.prototype.render = spec.render
+    Constructor.prototype = Object.assign(Constructor.prototype, spec)
 
     return Constructor
   },
-  /**
-   * create virtual DOM Element
-   * @param {function} type Component Class constructor
-   * @param {object} props Component properties
-   * @param {object} children Component children object
-   */
   createElement (type, props, children) {
     const el = { type, props: props || {} }
 
@@ -79,15 +87,10 @@ const Feact = {
 
     return el
   },
-  /**
-   * render virtual DOM to native DOM
-   * @param {object} el virtual DOM element
-   * @param {object} container native DOM element for mount
-   */
   render (el, container) {
     const wrapperElement = this.createElement(TopLevelWrapper, el)
     const componentInstance = new FeactCompositeComponentWrapper(wrapperElement)
-    return componentInstance.mountComponent(container)
+    return FeactReconciler.mountComponent(componentInstance, container)
   }
 }
 
