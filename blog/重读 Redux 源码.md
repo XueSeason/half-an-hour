@@ -92,3 +92,5 @@ function [middleware name] ({ dispatch, getState }) {
   }
 }
 ```
+
+接收一个函数，返回一个同样形式的函数，返回的函数内部调用接收的函数。将此函数作为中间件，compose 后形成调用链。
