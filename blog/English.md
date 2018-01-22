@@ -75,7 +75,7 @@ Most people consider a nurse a good wife.
 
 #### 补语的词类
 
-补语的词类，应该是**名词(n)**和**形容词(adj)**比较合理。例如：
+补语的词类，应该是 **名词(n)** 和 **形容词(adj)** 比较合理。例如：
 
 ```plain
 The military academy made John Smith a solier.
