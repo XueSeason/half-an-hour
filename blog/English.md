@@ -31,7 +31,7 @@ John Smith + died === S + V 句型，John Smith + killed + three enemy soldiers 
 
 ### S + V + C
 
-被解释为 `是` 的动词，完全没有意义，无法叙述内容（想像成 null），此时只能扮演**引导叙述部分**的绝色
+被解释为 `是` 的动词，完全没有意义，无法叙述内容（想像成 null），此时只能扮演**引导叙述部分**的角色
 
 ```plain
 3. John Smith was a soldier.
