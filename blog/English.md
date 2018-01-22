@@ -138,3 +138,106 @@ The history of recent China is a sorry record.
 ### 定冠词和专有名词
 
 专有名词和定冠词是冲突的，不能共存。
+
+## 动词时态
+
+现代语法中，时间（time）和状态（aspect）是分开处理的。时间是线性的，只有**过去**、**现在**、**未来**三个观念，状态比较繁琐，同时还有主动和被动语态。组合起来的情况就变复杂了。用编程的思想，此时需要从简单模块扩展到复杂模块。
+
+### 简单式
+
+#### 过去时间
+
+```plain
+The U.S. established diplomatic relations with th R.P.C. in 1979.
+```
+
+此句中 in 1979 来修饰动词 establish 的时间，这个时间属于过去，所以动词用 established。是过去时间的简单式。
+
+```plain
+The movable print was introduced to England in 1485.
+```
+
+be 动词的时间副词是 in 1485，和上述句子一样属于过去时间的简单式，所以动词是 was。过去分词 introduced 当做形容词补语看待，**过去分词字尾-ed表示被动的形容词字尾**
+
+```plain
+I was visiting clients the whole day yesterday.
+昨天一整天我一直在拜访客户。
+```
+
+时间副词 the whole day yesterday 的性质和 in 1979 是相同的，所以动词也是 was。visiting clients 视为现在分词的短语，作为形容词补语来形容主语。**现在分词表示持续的动作，中文一般为正在、一直**
+
+```plain
+I was watching TV when I heard the doorbell.
+听到门铃的时候，我正在看电视。
+```
+
+这里的时间副词是 when I heard the doorbell，是指门铃响起的一个很短的瞬间。这里需要注意的是动作发生的时段，可以像之前一样很长，也可以像上面句子中一样小到一个点。
+
+```plain
+The witness was being questioned in court when he had a heart attack.
+证人心脏病突发时，他正在法庭上被询问。
+```
+
+此句中，时间副词是 when he had a heart attack，指的是心脏病突发的瞬间，had 表示这个时间是过去的时间，所以 be 动词用 was 来表示过去简单式。主语是证人，be 动词后面的部分当形容词补语看待，being 和 questioned 都视为形容词。be 动词没有实际意义，being 的意义不在 be 在于 -ing 字尾。这个字尾表示`正在`。过去分词 questioned 也当形容词看，-ed 表示被动。being questioned 解释为 `正在被询问` 用来做主语证人的补语。动词 was 还是过去简单式。
+
+#### 现在时间
+
+时间副词是 now，或者是真理和事实。
+
+```plain
+7-ELEVEN is selling big cokes at a discount this month.
+```
+
+时间副词 this month 属于现在，be 动词的现在形式为 is，这个活动是持续进行中，以 selling big cokes 现在分词做补语，强调持续性。
+
+```plain
+Accoring to the NASA survey, the ozone is being depleted.
+```
+
+形容词补语 being 表示现在持续的状态，depleted 过去分词的词尾 -ed 有被动的意思。
+
+#### 未来时间
+
+```plain
+There will be a major election in March.
+```
+
+时间副词 in March 属于未来，未来的事情尚未发生，所以要加一个助动词 will 在前面，解释为`到时候会`。
+
+```plain
+The building will be razed next month.
+```
+
+动词用未来简单式 will be，razed 为形容词补语，-ed 过去分词作为被动态。
+
+### 完成式
+
+#### 现在
+
+简单式交代动作发生的时段，完成式只表示`曾经`、`做过`的意思。
+
+```plain
+We have been working for a week to fill your order.
+```
+
+for a week 强调截至时间，要用完成式『已经』来配合，所以动词用 have been。补语 working 是现在分词，表示持续性，解释为`一直工作`，用来形容主语 We。动词 have been 是 be 动词，解释为『已经』。
+
+```plain
+The house has been redecorated twice since they moved in.
+```
+
+时间副词 since they moved in，语气的重点『算到现在是多久』，所以用完成式 has been。redecorated 过去分词用于被动态作形容词补语。
+
+#### 过去
+
+```plain
+I had been smoking three packs of cigarettes a day before I decided to quit.
+```
+
+#### 未来
+
+```plain
+Next April, I will have worked here for 20 years.
+```
+
+Next April 是一个截止时间，需要用完成式。时间副词是 for 20 years 来修饰动词。
