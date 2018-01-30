@@ -241,3 +241,84 @@ Next April, I will have worked here for 20 years.
 ```
 
 Next April 是一个截止时间，需要用完成式。时间副词是 for 20 years 来修饰动词。
+
+## 不定词短语
+
+### 不定词和助动词的共同点
+
+```palin
+I am glad to know you.
+```
+
+例句还原成原状：
+
+```plain
+I am glad because I can know you.
+```
+
+继续改进：
+
+```plain
+I am glad beacuse I am able to know you.
+```
+
+由连接词 because 引导的副词从句中，主语 I 和前面的主要从句的主语相同，是重复元素。动词 am 是无实际意思的 be 动词，因此 I am 可以省略。如此一来就不是完整的从句结构，beacause 也没有存在的意义。to know 就是 able to know。
+
+不定词和助动词的共同点
+
+```plain
+1.后面都跟着动词原型
+I will go.
+I want to go.
+
+2.都有不确定的语气
+He may be right.
+He seems to be right.
+加上助动词 may 就变成不确定语气，同样地用到不定词也是不确定语气。
+
+3.都要用完成式表达相对的过去时间
+It must have rained last night.
+It seems to have rained last night.
+
+4.所有重要的语气助动词，都可以改写为不定词
+must - have to
+should - ought to
+will/would - be going to
+can/could - be able to
+may/might - be likely to
+```
+
+从上面看出，不定词和助动词其实是同一种东西的相互变化。
+
+### 不定词和动名词的区分
+
+动状词包括现在分词（Ving）、过去分词（Ven）、动名词（Ving）和不定词（to V）等。其中现在分词和过去分词属于形容词类，不定词则是『不一定什么词类』，可以作名词、副词、形容词使用。
+
+```plain
+They plan to marry next month.
+```
+
+They 是主语，plan 是谓语动词，to marry next month 是宾语，必须是名词类。为什么用不定词 to marry 而不是动名词 marrying？
+
+例子的原句应该是：
+
+```plain
+They plan (that) they will marry next month.
+```
+
+they will marry 可以改成 they are to marry，去掉重复的 they 和没有意思的 are，就变成了不定词 to marry。
+
+```plain
+I avoid making the same mistake twice.
+```
+
+to make 是 will make 的省略，如果用 to make 会难以理解。
+
+## 动名词
+
+动名词相对于普通名词而言，有持续性的暗示。
+
+```plain
+I am not afraid of death, but I am scared of dying.
+我不惧怕死亡，而是惧怕死亡的过程。
+```
