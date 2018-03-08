@@ -24,7 +24,7 @@
 
 ## combineReducers
 
-合并多个 reducer 返回一个 state 树。
+合并多个子 reducer 返回一个总 reducer，通过这个返回的 reducer 方法可以得到 state 树。
 
 核心代码：
 
@@ -84,13 +84,11 @@ export default function applyMiddleware(...middlewares) {
 中间件格式：
 
 ```js
-function [middleware name] ({ dispatch, getState }) {
-  return next => action => {
-    // before
-    next(action)
-    // after
-  }
+const [middleware name] = store => next => action => {
+  // before
+  next(action)
+  // after
 }
 ```
 
-接收一个函数，返回一个同样形式的函数，返回的函数内部调用接收的函数。将此函数作为中间件，compose 后形成调用链。
+类似于链表，最后的 next 指向 store.dispatch，一个 action 的触发，先经过 middlewares 然后再调用 store.dispatch 改变 state。
